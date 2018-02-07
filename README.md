@@ -1,2 +1,1 @@
-# conference-proposals
-Proposals I've submitted to conferences, rejected or otherwise
+Proposals I've submitted to conferences, rejected or otherwise.
