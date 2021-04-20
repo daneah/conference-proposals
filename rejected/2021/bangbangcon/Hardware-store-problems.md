@@ -1,4 +1,4 @@
-# Hardware (store) problems: Lessons learned from debugging physical systems
+# Hardware (store!) problems: Lessons learned from debugging physical systems
 
 ## Description
 
@@ -12,31 +12,31 @@ This talk is geared toward developers who want to improve their systems thinking
 
 ## Outline
 
-### Introduction (1 minute)
+### Introduction
 
 * Setting the stage—we bought and renovated a home
 * About me
 
-### Know the modes of problem solving (2 minutes)
+### Know the modes of problem solving
 
 * Things are on fire (prod issues)—put it out immediately
 * Creating new value (features)—how could things become on fire?
 * Tech debt (bugs)—how on fire is it?
 
-### Consider costs and benefits (5 minutes)
+### Consider costs and benefits
 
 * There are often different solutions—each has ups and downs.
 * Writing our own code or using an existing package have differing levels of control, maintenance burden, speed of iteration, and experience gain.
 * Whereas homes appreciate in value, code typically depreciates.
 * When you do decide to solve a problem yourself, do the research up front. You may not get it perfect, but it will be a workable solution.
 
-### Generate hypotheses (5 minutes)
+### Generate hypotheses
 
 * Some problems are straightforward, but most aren’t obvious at first glance.
 * Use observations to drive hypotheses. Throw out assumptions.
 * Think about all the players—assume they’re flawed. Do the work to prove each part of the system is, in fact, working. Use new observations to support and refute hypotheses.
 
-### Provide test points (5 minutes)
+### Provide test points
 
 * Observability helps us understand system health—lack of observability is lack of evidence.
   * Emit logs and metrics for core workflows and put them in front of eyes.
@@ -46,7 +46,7 @@ This talk is geared toward developers who want to improve their systems thinking
 * Some things just aren’t yours to know—proprietary systems will force your hand. Remember this during your cost / benefit analysis!
   * Particularly frustrating with leaky abstractions—you can see where the problem comes from, but can’t see how to fix it or see that it can’t be fixed.
 
-### Uncover similarities and differences (3 minutes)
+### Uncover similarities and differences
 
 * Understanding a problem is often about reducing the search space.
   * Use hypotheses to discount systems from consideration.
@@ -57,7 +57,7 @@ This talk is geared toward developers who want to improve their systems thinking
   * Same environment variables?
   * git-bisect can help.
 
-### Build in safety nets (5 minutes)
+### Build in safety nets
 
 * Even when code has the right behavior, it can run suboptimally.
   * Noisy pipes
@@ -70,13 +70,13 @@ This talk is geared toward developers who want to improve their systems thinking
   * CircuitBreaker pattern and backoff logic can help.
 * When in doubt, fail obnoxiously. Fail silently only if things are at an acceptable level of on fire and you have a backup plan.
 
-### It’s adapters all the way down (2 minutes)
+### It’s adapters all the way down
 
 * Software seeks to convey or convert data—functions and systems adapt a domain to a range.
   * Useful in algorithm development—example: cosine/sine map (-inf, inf) to [-1, 1]
 * Seek to reduce entropy at each step (robustness principle).
 
-### Conclusion (2 minutes)
+### Conclusion
 
 * Solve problems scientifically.
 * In the absence of science, solve problems flexibly.
