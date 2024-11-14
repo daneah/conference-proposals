@@ -1,5 +1,7 @@
 # Breaking the monolith
 
+Proposed jointly with @adandavati
+
 ## Abstract
 
 As engineers we make decisions every day that can impact our systems for years to come. What happens when the solutions of yesterday become the problems of the present?
